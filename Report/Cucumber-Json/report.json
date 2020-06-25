@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "As a valid user I should be able to login to the application",
+        "description": "",
+        "id": "test-login-funtionality;as-a-valid-user-i-should-be-able-to-login-to-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 77127400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the browser",
+            "match": {
+              "location": "LoginTest.i_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1827800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to the application",
+            "match": {
+              "location": "LoginTest.i_go_to_the_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see the logo",
+            "match": {
+              "location": "LoginTest.i_should_see_the_logo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid username",
+            "match": {
+              "location": "LoginTest.i_enter_valid_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 37500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter valid password",
+            "match": {
+              "location": "LoginTest.i_enter_valid_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.i_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the logout link",
+            "match": {
+              "location": "LoginTest.i_should_see_the_logout_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login funtionality",
+    "description": "As a valid user, I should be able to login to the application",
+    "id": "test-login-funtionality",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
