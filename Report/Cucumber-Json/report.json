@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 77127400,
+              "duration": 78755800,
               "status": "passed"
             },
             "line": 5,
@@ -24,8 +24,9 @@
           },
           {
             "result": {
-              "duration": 1827800,
-              "status": "passed"
+              "duration": 1574000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinition.LoginTest.i_go_to_the_application(LoginTest.java:19)\r\n\tat ✽.When I go to the application(feature/login.feature:6)\r\n",
+              "status": "failed"
             },
             "line": 6,
             "name": "I go to the application",
@@ -36,8 +37,7 @@
           },
           {
             "result": {
-              "duration": 34200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "I should see the logo",
@@ -48,8 +48,7 @@
           },
           {
             "result": {
-              "duration": 29900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "I enter valid username",
@@ -60,8 +59,7 @@
           },
           {
             "result": {
-              "duration": 37500,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "I enter valid password",
@@ -72,8 +70,7 @@
           },
           {
             "result": {
-              "duration": 24400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "I click the login button",
@@ -84,8 +81,7 @@
           },
           {
             "result": {
-              "duration": 24200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "I should see the logout link",
@@ -101,6 +97,6 @@
     "description": "As a valid user, I should be able to login to the application",
     "id": "test-login-funtionality",
     "keyword": "Feature",
-    "uri": "login.feature"
+    "uri": "feature/login.feature"
   }
 ]

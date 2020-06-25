@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.TestRunner" time="0.002" tests="8" errors="0" skipped="0" failures="0">
+<testsuite name="runner.TestRunner" time="0.009" tests="8" errors="0" skipped="5" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
@@ -36,6 +36,7 @@
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:/Users/fahim/OneDrive/Documents/Selenium/Maven/apache-maven-3.6.3/lib/jansi-native"/>
     <property name="user.home" value="C:\Users\fahim"/>
+    <property name="Runner" value="TestRunner"/>
     <property name="user.timezone" value="America/New_York"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
@@ -45,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_241\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -DRunner=TestRunner"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,11 +64,39 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase name="Given I open the browser" classname="Scenario: As a valid user I should be able to login to the application" time="0.001"/>
-  <testcase name="When I go to the application" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="Then I should see the logo" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="Then I enter valid username" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="Then I enter valid password" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="And I click the login button" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="Then I should see the logout link" classname="Scenario: As a valid user I should be able to login to the application" time="0"/>
-  <testcase name="Scenario: As a valid user I should be able to login to the application" classname="Scenario: As a valid user I should be able to login to the application" time="0.001"/>
+  <testcase name="When I go to the application" classname="Scenario: As a valid user I should be able to login to the application" time="0.004">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.LoginTest.i_go_to_the_application(LoginTest.java:19)
+	at ✽.When I go to the application(feature/login.feature:6)
+</failure>
+    <system-out><![CDATA[Application is open.
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario: As a valid user I should be able to login to the application" classname="Scenario: As a valid user I should be able to login to the application" time="0.004">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.LoginTest.i_go_to_the_application(LoginTest.java:19)
+	at ✽.When I go to the application(feature/login.feature:6)
+</failure>
+  </testcase>
+  <testcase name="Then I should see the logo" classname="Scenario: As a valid user I should be able to login to the application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then I enter valid username" classname="Scenario: As a valid user I should be able to login to the application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then I enter valid password" classname="Scenario: As a valid user I should be able to login to the application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And I click the login button" classname="Scenario: As a valid user I should be able to login to the application" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then I should see the logout link" classname="Scenario: As a valid user I should be able to login to the application" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
