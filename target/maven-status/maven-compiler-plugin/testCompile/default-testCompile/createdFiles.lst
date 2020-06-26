@@ -1,3 +1,4 @@
 runner\FailedRunner2.class
+utilities\UtilitiesCucumber.class
 runner\TestRunner.class
 stepDefinition\LoginTest.class

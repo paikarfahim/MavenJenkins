@@ -1,46 +1,68 @@
 package stepDefinition;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import utilities.UtilitiesCucumber;
 
-public class LoginTest {
+public class LoginTest extends UtilitiesCucumber {
 
-	@Given("^I open the browser$")
-	public void i_open_the_browser() {
-		System.out.println("Brwoser Opened.");
+//You can implement missing steps with the snippet below:
+
+	@Given("^I Open Chrome Browser$")
+	public void I_Open_Chrome_Browser() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\fahim\\OneDrive\\Documents\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
 	}
 
-	@When("^I go to the application$")
-	public void i_go_to_the_application() {
-		System.out.println("Application is open.");
-		Assert.assertTrue(false);
+	@When("^I go to Salesforce application$")
+	public void I_go_to_Salesforce_application() {
+		driver.get("https://login.salesforce.com/");
+		driver.manage().window().maximize();
+
 	}
 
-	@Then("^I should see the logo$")
-	public void i_should_see_the_logo() {
-		System.out.println("The logo is visible.");
+	@Then("^I should see the Salesforce logo$")
+	public void I_should_see_the_Salesforce_logo() {
+		WebElement logo = driver.findElement(By.id("logo"));
+		if (logo.isDisplayed()) {
+			System.out.println("Logo is present");
+		} else {
+			System.out.println("The logo is not present");
+		}
+
 	}
 
-	@Then("^I enter valid username$")
-	public void i_enter_valid_username() {
-		System.out.println("User name is entered.");
+	@Then("^I enter \"([^\"]*)\" username$")
+	public void I_enter_username(String username) {
+		driver.findElement(By.id("username")).sendKeys(username);
 	}
 
-	@Then("^I enter valid password$")
-	public void i_enter_valid_password() {
-		System.out.println("Password is entered.");
+	@Then("^I enter \"([^\"]*)\" password$")
+	public void I_enter_password(String password) {
+		driver.findElement(By.id("password")).sendKeys(password);
 	}
 
-	@Then("^I click the login button$")
-	public void i_click_the_login_button() {
-		System.out.println("Login button clicked.");
+	@When("^I click the login button$")
+	public void I_click_the_login_button() {
+		driver.findElement(By.id("Login")).click();
+
 	}
 
 	@Then("^I should see the logout link$")
-	public void i_should_see_the_logout_link() {
-		System.out.println("Logout tab is visible.");
+	public void I_should_see_the_logout_link() {
+		boolean loggedin = driver.findElement(By.id("setupLink")).isDisplayed();
+		Assert.assertTrue(loggedin);
 	}
+
 }

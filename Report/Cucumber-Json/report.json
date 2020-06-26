@@ -3,90 +3,363 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "As a valid user I should be able to login to the application",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "test-login-funtionality;as-a-valid-user-i-should-be-able-to-login-to-the-application",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 78755800,
+              "duration": 4263483500,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I open the browser",
+            "line": 4,
+            "name": "I Open Chrome Browser",
             "match": {
-              "location": "LoginTest.i_open_the_browser()"
+              "location": "LoginTest.I_Open_Chrome_Browser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1574000,
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinition.LoginTest.i_go_to_the_application(LoginTest.java:19)\r\n\tat ✽.When I go to the application(feature/login.feature:6)\r\n",
-              "status": "failed"
+              "duration": 2642296200,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "I go to the application",
+            "line": 5,
+            "name": "I go to Salesforce application",
             "match": {
-              "location": "LoginTest.i_go_to_the_application()"
+              "location": "LoginTest.I_go_to_Salesforce_application()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 90718800,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "I should see the logo",
+            "line": 6,
+            "name": "I should see the Salesforce logo",
             "match": {
-              "location": "LoginTest.i_should_see_the_logo()"
+              "location": "LoginTest.I_should_see_the_Salesforce_logo()"
             },
             "keyword": "Then "
-          },
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Test Using Valid Credentials",
+        "description": "",
+        "id": "test-login-funtionality;test-using-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "I enter valid username",
-            "match": {
-              "location": "LoginTest.i_enter_valid_username()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 141203500,
+              "status": "passed"
             },
             "line": 9,
-            "name": "I enter valid password",
+            "name": "I enter \"batch03@codegator.us.qa\" username",
             "match": {
-              "location": "LoginTest.i_enter_valid_password()"
+              "arguments": [
+                {
+                  "val": "batch03@codegator.us.qa",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_username(String)"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "I click the login button",
-            "match": {
-              "location": "LoginTest.i_click_the_login_button()"
-            },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 76066700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \"Pa55word\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pa55word",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 781127900,
+              "status": "passed"
             },
             "line": 11,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.I_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2244850800,
+              "status": "passed"
+            },
+            "line": 12,
             "name": "I should see the logout link",
             "match": {
-              "location": "LoginTest.i_should_see_the_logout_link()"
+              "location": "LoginTest.I_should_see_the_logout_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3267199900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Open Chrome Browser",
+            "match": {
+              "location": "LoginTest.I_Open_Chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2482386700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to Salesforce application",
+            "match": {
+              "location": "LoginTest.I_go_to_Salesforce_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37224500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the Salesforce logo",
+            "match": {
+              "location": "LoginTest.I_should_see_the_Salesforce_logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Test Using Valid Credentials",
+        "description": "",
+        "id": "test-login-funtionality;test-using-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 126920300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter \"batch03@codegator.us.qa\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "batch03@codegator.us.qa",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88937600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \"Pa55word\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pa55word",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 766368600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.I_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1185316700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the logout link",
+            "match": {
+              "location": "LoginTest.I_should_see_the_logout_link()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3272153000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Open Chrome Browser",
+            "match": {
+              "location": "LoginTest.I_Open_Chrome_Browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2504643900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to Salesforce application",
+            "match": {
+              "location": "LoginTest.I_go_to_Salesforce_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38410300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should see the Salesforce logo",
+            "match": {
+              "location": "LoginTest.I_should_see_the_Salesforce_logo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Test Using Valid Credentials",
+        "description": "",
+        "id": "test-login-funtionality;test-using-valid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 109080600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter \"batch03@codegator.us.qa\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "batch03@codegator.us.qa",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75140000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \"Pa55word\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pa55word",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginTest.I_enter_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 747308800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click the login button",
+            "match": {
+              "location": "LoginTest.I_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2797274600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see the logout link",
+            "match": {
+              "location": "LoginTest.I_should_see_the_logout_link()"
             },
             "keyword": "Then "
           }
@@ -97,6 +370,6 @@
     "description": "As a valid user, I should be able to login to the application",
     "id": "test-login-funtionality",
     "keyword": "Feature",
-    "uri": "feature/login.feature"
+    "uri": "login.feature"
   }
 ]
